@@ -1,81 +1,79 @@
-# Startup - Free Next.js Startup Website Template
+# CREDITspective Demo
 
-Startup is a free, open-source, and premium-quality [**Next.js startup website template**](https://nextjstemplates.com/templates/startup) that comes with everything you need to launch a startup, business, or SaaS website, including all essential sections, components, and pages.
+CREDITspective is an AI-powered website for leveraged and private credit teams.
+This project is built with Next.js and Tailwind CSS.
 
-If you're looking for a high-quality and visually appealing, feature-rich Next.js Template for your next startup, SaaS, or business website, this is the perfect choice and starting point for you!
+## Overview
 
-### ✨ Key Features
+The homepage is customized around:
 
-- Crafted for Startup and SaaS Business
-- Next.js and Tailwind CSS
-- All Essential Business Sections and Pages
-- High-quality and Clean Design
-- Dark and Light Version
-- TypeScript Support
-and Much More ...
+- Agentic and generative AI positioning
+- Credit platform workflow and capabilities
+- Team and company messaging
+- Blog/resources content
+- Demo request call-to-actions
 
-### 🙌 Detailed comparison between the Free and Pro versions of Startup
+## Tech Stack
 
-| Feature             | Free | Pro |
-|---------------------|------------|----------|
-| Next.js Landing Page             | ✅ Yes      | ✅ Yes      |
-| All The Integrations - Auth, DB, Payments, Blog and many more ...             | ❌ No      | ✅ Yes |
-| Homepage Variations             | 1      | 2 |
-| Additional SaaS Pages and Components             | ❌ No      | ✅ Yes |
-| Functional Blog with Sanity       | ❌ No      | ✅ Yes |
-| Use with Commercial Projects            | ✅ Yes      | ✅ Yes      |
-| Lifetime Free Updates             | ✅ Yes      | ✅ Yes |
-| Email Support       | ❌ No         | ✅ Yes       |
-| Community Support         | ✅ Yes         | ✅ Yes       |
+- Next.js 16
+- React 19
+- Tailwind CSS v4
+- TypeScript
 
-### [🔥 Get Startup Pro](https://nextjstemplates.com/templates/saas-starter-startup)
+## Local Development
 
-[![Startup Pro](https://raw.githubusercontent.com/NextJSTemplates/startup-nextjs/main/startup-pro.webp)](https://nextjstemplates.com/templates/saas-starter-startup)
+Install dependencies:
 
-Startup Pro - Expertly crafted for fully-functional, high-performing SaaS startup websites. Comes with with Authentication, Database, Blog, and all the essential integrations necessary for SaaS business sites.
+```bash
+npm install
+```
 
-- [🚀 View Free Demo](https://startup.nextjstemplates.com/)
+Start development server:
 
-- [🚀 View Pro Demo](https://startup-pro.nextjstemplates.com/)
+```bash
+npm run dev
+```
 
-- [📦 Download](https://nextjstemplates.com/templates/startup)
+Build for production:
 
-- [🔥 Get Pro](https://nextjstemplates.com/templates/saas-starter-startup)
+```bash
+npm run build
+```
 
-- [🔌 Documentation](https://nextjstemplates.com/docs)
+Run production server locally:
 
-### ⚡ Deploy Now
+```bash
+npm run start
+```
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FNextJSTemplates%2Fstartup-nextjs)
+## Project Structure
 
-[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/NextJSTemplates/startup-nextjs)
+- `src/app` - App Router pages and layout
+- `src/components` - UI sections and reusable components
+- `src/styles` - global styles
+- `public` - static assets (images/videos)
 
-### 📄 License
+## Media
 
-Startup is 100% free and open-source, feel free to use with your personal and commercial projects.
+Local video used on the homepage:
 
-### 💜 Support
+- `public/videos/finance.mp4`
 
-If you like the template, please star this repository to inspire the team to create more stuff like this and reach more users like you!
+## Deployment (Vercel)
 
-### ✨ Explore and Download - Free [Next.js Templates](https://nextjstemplates.com)
+This project is ready for Vercel deployment.
 
-### Update Log
+1. Push code to GitHub
+2. Import repository in Vercel
+3. Keep default Next.js build settings
+4. Deploy
 
-**03 December 2025**
+## Repository
 
-- Upgrade to Next.js 16
-- Fixed video modal issue
+GitHub:
 
-**10 April 2025**
+- https://github.com/hayknurijanyan/creditspective-demo
 
-- Fix peer deps issue with Next.js 15
-- Upgrade to tailwind v4
-- Refactored blog cards for handling edge cases(text ellipsis on bio, keeping author details at the bottom etc.)
-- Re-wrote blog details page with icons separation, fallback author image and better markup.
-- Fixed duplicate key errors on homepage.
-- Separated icons on theme-switcher button, and refactored scroll-to-top button.
+## License
 
-**29 Jan 2025**
-
-- Upgraded to Next.js 15
+This project includes the original upstream `LICENSE` file in the repository.
