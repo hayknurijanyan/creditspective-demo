@@ -1,10 +1,13 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
 const HEADER_OFFSET = 96;
 
 export default function ScrollEffects() {
+  const pathname = usePathname();
+
   useEffect(() => {
     const reduceMotion = window.matchMedia(
       "(prefers-reduced-motion: reduce)",
@@ -36,6 +39,9 @@ export default function ScrollEffects() {
         );
 
     revealElements.forEach((element, index) => {
+      if (!reduceMotion) {
+        element.classList.remove("is-visible");
+      }
       element.style.setProperty("--reveal-delay", `${Math.min(index * 45, 280)}ms`);
       observer?.observe(element);
     });
@@ -76,7 +82,7 @@ export default function ScrollEffects() {
       observer?.disconnect();
       document.removeEventListener("click", handleClick);
     };
-  }, []);
+  }, [pathname]);
 
   return null;
 }
