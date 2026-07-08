@@ -125,17 +125,5 @@ const menuData: Menu[] = [
       },
     ],
   },
-  {
-    id: 5,
-    title: "Login",
-    path: "/signin",
-    newTab: false,
-  },
-  {
-    id: 6,
-    title: "Request Demo",
-    path: "/#contact",
-    newTab: false,
-  },
 ];
 export default menuData;
