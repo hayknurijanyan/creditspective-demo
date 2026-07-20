@@ -22,7 +22,10 @@ export default function RootLayout({
       */}
       <head />
 
-      <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
+      <body
+        suppressHydrationWarning
+        className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}
+      >
         <Providers>
           <ScrollEffects />
           <div className="isolate">
@@ -38,4 +41,3 @@ export default function RootLayout({
 }
 
 import { Providers } from "./providers";
-

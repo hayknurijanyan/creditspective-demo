@@ -3,5 +3,10 @@ export type Feature = {
   id: number;
   icon: JSX.Element;
   title: string;
-  paragraph: string;
+  summary: string;
+  details: string;
+  bullets: string[];
+  eyebrow: string;
+  imageAlt: string;
+  imageSrc: string;
 };

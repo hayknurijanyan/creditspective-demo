@@ -8,7 +8,7 @@ const checkIcon = (
 );
 
 const AboutSectionOne = () => {
-  const List = ({ text }) => (
+  const List = ({ text }: { text: string }) => (
     <p className="text-body-color mb-5 flex items-center text-lg font-medium">
       <span className="bg-primary/10 text-primary mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md">
         {checkIcon}
@@ -20,12 +20,12 @@ const AboutSectionOne = () => {
   return (
     <section id="about" className="pt-16 md:pt-20 lg:pt-28">
       <div className="container">
-        <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
+        <div className="border-body-color/[.15] border-b pb-16 md:pb-20 lg:pb-28 dark:border-white/[.15]">
           <div className="-mx-4 flex flex-wrap items-center">
             <div data-reveal="left" className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title="No Touch Integration"
-                paragraph="CREDITspective is designed as a mantle application, a lightweight intelligence layer that sits seamlessly on top of your existing systems without disruption."
+                title="Institutional memory"
+                paragraph="Searchable deal history helps your team reuse prior diligence, preserve firm context, and move faster on the next cycle."
                 mb="44px"
               />
 
@@ -35,33 +35,36 @@ const AboutSectionOne = () => {
               >
                 <div className="mx-[-12px] flex flex-wrap">
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Lightweight mantle architecture" />
-                    <List text="No rip-and-replace implementation" />
-                    <List text="Accelerated time-to-value" />
+                    <List text="Searchable across open, approved, closed, and done-away deals" />
+                    <List text="Reusable by the next analyst on the next deal" />
+                    <List text="Compounds on the same foundation over time" />
                   </div>
 
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="AI-driven standardized assessments" />
-                    <List text="Works with existing workflows" />
-                    <List text="Lower upfront investment, higher impact" />
+                    <List text="Discovery, underwriting, monitoring, and portfolio management together" />
+                    <List text="Every figure traceable to its source data" />
+                    <List text="Institutional knowledge that survives every cycle" />
                   </div>
                 </div>
               </div>
             </div>
 
             <div className="w-full px-4 lg:w-1/2">
-              <div data-reveal="right" className="relative mx-auto aspect-25/24 max-w-[500px] lg:mr-0">
+              <div
+                data-reveal="right"
+                className="relative mx-auto aspect-25/24 max-w-[500px] lg:mr-0"
+              >
                 <Image
                   src="/images/about/about-image.svg"
                   alt="about-image"
                   fill
-                  className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0"
+                  className="drop-shadow-three mx-auto max-w-full lg:mr-0 dark:hidden dark:drop-shadow-none"
                 />
                 <Image
                   src="/images/about/about-image-dark.svg"
                   alt="about-image"
                   fill
-                  className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0"
+                  className="drop-shadow-three mx-auto hidden max-w-full lg:mr-0 dark:block dark:drop-shadow-none"
                 />
               </div>
             </div>

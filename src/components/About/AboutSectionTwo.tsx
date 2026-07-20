@@ -21,52 +21,53 @@ const AboutSectionTwo = () => {
                 src="/images/about/about-image-2-dark.svg"
                 alt="about image"
                 fill
-                className="hidden drop-shadow-three dark:block dark:drop-shadow-none"
+                className="drop-shadow-three hidden dark:block dark:drop-shadow-none"
               />
             </div>
           </div>
           <div className="w-full px-4 lg:w-1/2">
             <div data-reveal="right" className="max-w-[470px]">
-              <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl">
-                How It Works
+              <h2 className="mb-4 text-3xl font-bold text-black sm:text-4xl dark:text-white">
+                One workflow, four stages.
               </h2>
-              <p className="mb-9 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                From integration to insight in four simple steps.
+              <p className="text-body-color mb-9 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed">
+                Discovery, underwriting, monitoring, and portfolio management
+                all run on the same memory layer.
               </p>
               <div className="mb-9">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  01 Connect Your Systems
+                <h3 className="mb-4 text-xl font-bold text-black sm:text-2xl lg:text-xl xl:text-2xl dark:text-white">
+                  01 Deal Discovery
                 </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  CREDITspective integrates seamlessly with your existing
-                  infrastructure and workflows.
+                <p className="text-body-color text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed">
+                  Early deal identification, platform-wide search, and rapid
+                  screening against your investment criteria.
                 </p>
               </div>
               <div className="mb-9">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  02 AI Agents Activate
+                <h3 className="mb-4 text-xl font-bold text-black sm:text-2xl lg:text-xl xl:text-2xl dark:text-white">
+                  02 Underwriting
                 </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Agentic AI continuously scans internal and external sources to
-                  identify opportunities and risks.
+                <p className="text-body-color text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed">
+                  Ingest data-room documents, reconcile financials with source
+                  links, and draft IC memos in your firm's template.
                 </p>
               </div>
               <div className="mb-9">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  03 Intelligent Analysis
+                <h3 className="mb-4 text-xl font-bold text-black sm:text-2xl lg:text-xl xl:text-2xl dark:text-white">
+                  03 Monitoring
                 </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Generative AI synthesizes findings into actionable insights,
-                  competitive positioning, and pricing recommendations.
+                <p className="text-body-color text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed">
+                  Track covenants and performance in real time, with
+                  early-warning alerts before issues escalate.
                 </p>
               </div>
               <div className="mb-1">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  04 Continuous Monitoring
+                <h3 className="mb-4 text-xl font-bold text-black sm:text-2xl lg:text-xl xl:text-2xl dark:text-white">
+                  04 Portfolio Management
                 </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Real-time monitoring of credit performance and obligor health
-                  with automated alerts and dashboards.
+                <p className="text-body-color text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed">
+                  Turn hindsight into insight with exposure tracking, cross-deal
+                  analysis, and LP-ready reporting.
                 </p>
               </div>
             </div>

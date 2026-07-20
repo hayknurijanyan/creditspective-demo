@@ -12,10 +12,9 @@ import Video from "@/components/Video";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "CREDITspective | AI-Powered Intelligence for Leveraged Credit",
+  title: "CREDITspective | The Entire Credit Workflow, Unified",
   description:
-    "CREDITspective combines agentic and generative AI to help credit investors discover opportunities, underwrite faster, and monitor performance in real time.",
-  // other metadata
+    "CREDITspective is an agentic AI platform for deal discovery, underwriting, monitoring, and portfolio management, grounded in your firm's institutional memory.",
 };
 
 export default function Home() {
@@ -27,7 +26,7 @@ export default function Home() {
       <Video />
       <Brands />
       <AboutSectionOne />
-      <AboutSectionTwo />
+      {/* <AboutSectionTwo /> */}
       <Testimonials />
       <Pricing />
       <Blog />
