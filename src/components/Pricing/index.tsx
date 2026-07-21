@@ -18,10 +18,10 @@ const Pricing = () => {
           title="See the full workflow, end to end."
           paragraph="Book a walkthrough tailored to how your team sources, underwrites, and monitors credit."
           center
-          width="820px"
+          width="900px"
         />
 
-        <div className="mx-auto mb-12 grid max-w-[920px] grid-cols-1 gap-4 md:grid-cols-2">
+        <div className="mb-12 grid w-full grid-cols-1 gap-4 md:grid-cols-2">
           {benefits.map((benefit, index) => (
             <div
               key={index}
@@ -37,7 +37,7 @@ const Pricing = () => {
 
         <div
           data-reveal="zoom"
-          className="shadow-three dark:bg-gray-dark dark:shadow-two relative mx-auto max-w-[920px] overflow-hidden rounded-xs bg-white p-8 text-center sm:p-10"
+          className="shadow-three dark:bg-gray-dark dark:shadow-two relative w-full overflow-hidden rounded-xs bg-white p-8 text-center sm:p-10"
         >
           <div className="absolute inset-0 z-0 opacity-70 dark:opacity-45">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(74,108,247,0.16),_transparent_28%),radial-gradient(circle_at_bottom_left,_rgba(74,108,247,0.12),_transparent_30%)]" />

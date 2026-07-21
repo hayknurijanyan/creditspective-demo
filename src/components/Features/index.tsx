@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
 import featuresData from "./featuresData";
 
@@ -17,11 +17,30 @@ const Features = () => {
     [activeFeatureId],
   );
 
+  useEffect(() => {
+    const setActiveFromHash = () => {
+      const hash = window.location.hash.replace("#", "");
+      if (!hash) return;
+
+      const matchedFeature = featuresData.find(
+        (feature) => feature.anchor === hash,
+      );
+      if (matchedFeature) {
+        setActiveFeatureId(matchedFeature.id);
+      }
+    };
+
+    setActiveFromHash();
+    window.addEventListener("hashchange", setActiveFromHash);
+    return () => window.removeEventListener("hashchange", setActiveFromHash);
+  }, []);
+
   return (
     <>
       <section id="features" className="py-16 md:py-20 lg:py-28">
         <div className="container">
           <SectionTitle
+            eyebrow="Workflow Features"
             title={"One thread runs through \n  every stage of the workflow."}
             paragraph="Every deal you screen, underwrite, monitor, and exit becomes durable, searchable institutional memory — reusable by the next analyst, on the next deal, in the next cycle. Discovery, underwriting, monitoring, and portfolio management aren't four tools bolted together; they compound on the same foundation."
             center
@@ -35,72 +54,66 @@ const Features = () => {
                 const isActive = feature.id === activeFeatureId;
 
                 return (
-                  <button
+                  <div
+                    id={feature.anchor}
                     key={feature.id}
-                    type="button"
-                    onClick={() => setActiveFeatureId(feature.id)}
-                    className={`group shadow-three hover:shadow-two dark:bg-gray-dark dark:shadow-two w-full rounded-md border bg-white p-6 text-left transition-all duration-300 ease-in-out hover:-translate-y-0.5 sm:p-7 ${
-                      isActive
-                        ? "border-primary/30 ring-primary/20 ring-1"
-                        : "border-transparent"
-                    }`}
-                    aria-expanded={isActive}
+                    className="scroll-mt-28"
                   >
-                    <div className="flex items-start gap-4">
-                      <div className="bg-primary/10 text-primary flex h-[64px] w-[64px] shrink-0 items-center justify-center rounded-md transition-transform duration-300 group-hover:scale-105">
-                        {feature.icon}
-                      </div>
-
-                      <div className="min-w-0 flex-1">
-                        <div className="mb-2 flex items-center justify-between gap-4">
-                          <span className="text-primary/80 text-xs font-semibold tracking-[0.18em] uppercase">
-                            {feature.eyebrow}
-                          </span>
-                          <span
-                            className={`rounded-full border px-3 py-1 text-xs font-medium transition-colors duration-300 ${
-                              isActive
-                                ? "border-primary/30 bg-primary/10 text-primary"
-                                : "border-stroke text-body-color dark:text-body-color-dark bg-transparent dark:border-white/10"
-                            }`}
-                          >
-                            {isActive ? "Open" : "Tap to expand"}
-                          </span>
+                    <button
+                      type="button"
+                      onClick={() => setActiveFeatureId(feature.id)}
+                      className={`group shadow-three hover:shadow-two dark:bg-gray-dark dark:shadow-two w-full rounded-md border bg-white p-6 text-left transition-all duration-300 ease-in-out hover:-translate-y-0.5 sm:p-7 ${
+                        isActive
+                          ? "border-primary/30 ring-primary/20 ring-1"
+                          : "border-transparent"
+                      }`}
+                      aria-expanded={isActive}
+                    >
+                      <div className="flex items-start gap-4">
+                        <div className="bg-primary/10 text-primary flex h-[44px] w-[44px] shrink-0 items-center justify-center rounded-md transition-transform duration-300 group-hover:scale-105 [&_svg]:h-6 [&_svg]:w-6">
+                          {feature.icon}
                         </div>
 
-                        <h3 className="group-hover:text-primary mb-2 text-xl font-bold text-black transition-colors duration-300 sm:text-2xl lg:text-xl xl:text-2xl dark:text-white">
-                          {feature.title}
-                        </h3>
-                        <p className="text-body-color dark:text-body-color-dark text-base leading-relaxed font-medium">
-                          {feature.summary}
-                        </p>
+                        <div className="min-w-0 flex-1">
+                          <span className="text-primary/80 mb-2 block text-xs font-semibold tracking-[0.18em] uppercase">
+                            {feature.eyebrow}
+                          </span>
 
-                        <div
-                          className={`grid overflow-hidden transition-all duration-500 ease-in-out ${
-                            isActive
-                              ? "mt-5 grid-rows-[1fr] opacity-100"
-                              : "mt-0 grid-rows-[0fr] opacity-0"
-                          }`}
-                        >
-                          <div className="min-h-0">
-                            <p className="text-body-color-dark text-body-color mb-4 text-sm leading-relaxed">
-                              {feature.details}
-                            </p>
-                            <ul className="text-body-color dark:text-body-color-dark space-y-2 text-sm leading-relaxed">
-                              {feature.bullets.map((bullet) => (
-                                <li
-                                  key={bullet}
-                                  className="flex items-start gap-3"
-                                >
-                                  <span className="bg-primary mt-2 h-1.5 w-1.5 shrink-0 rounded-full" />
-                                  <span>{bullet}</span>
-                                </li>
-                              ))}
-                            </ul>
+                          <h3 className="group-hover:text-primary mb-2 text-base font-bold text-black transition-colors duration-300 sm:text-lg lg:text-base xl:text-lg dark:text-white">
+                            {feature.title}
+                          </h3>
+                          <p className="text-body-color dark:text-body-color-dark text-base leading-relaxed font-medium">
+                            {feature.summary}
+                          </p>
+
+                          <div
+                            className={`grid overflow-hidden transition-all duration-500 ease-in-out ${
+                              isActive
+                                ? "mt-5 grid-rows-[1fr] opacity-100"
+                                : "mt-0 grid-rows-[0fr] opacity-0"
+                            }`}
+                          >
+                            <div className="min-h-0">
+                              <p className="text-body-color-dark text-body-color mb-4 text-sm leading-relaxed">
+                                {feature.details}
+                              </p>
+                              <ul className="text-body-color dark:text-body-color-dark space-y-2 text-sm leading-relaxed">
+                                {feature.bullets.map((bullet) => (
+                                  <li
+                                    key={bullet}
+                                    className="flex items-start gap-3"
+                                  >
+                                    <span className="bg-primary mt-2 h-1.5 w-1.5 shrink-0 rounded-full" />
+                                    <span>{bullet}</span>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </button>
+                    </button>
+                  </div>
                 );
               })}
             </div>

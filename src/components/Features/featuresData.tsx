@@ -3,6 +3,7 @@ import { Feature } from "@/types/feature";
 const featuresData: Feature[] = [
   {
     id: 1,
+    anchor: "deal-discovery",
     icon: (
       <svg width="40" height="41" viewBox="0 0 40 41" className="fill-current">
         <path
@@ -28,6 +29,7 @@ const featuresData: Feature[] = [
   },
   {
     id: 2,
+    anchor: "underwriting",
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" className="fill-current">
         <path
@@ -54,6 +56,7 @@ const featuresData: Feature[] = [
   },
   {
     id: 3,
+    anchor: "monitoring",
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" className="fill-current">
         <path
@@ -79,6 +82,7 @@ const featuresData: Feature[] = [
   },
   {
     id: 4,
+    anchor: "portfolio-management",
     icon: (
       <svg width="40" height="42" viewBox="0 0 40 42" className="fill-current">
         <path

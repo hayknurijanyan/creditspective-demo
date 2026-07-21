@@ -3,31 +3,31 @@ import { Menu } from "@/types/menu";
 const menuData: Menu[] = [
   {
     id: 1,
-    title: "Platform",
+    title: "Product",
     newTab: false,
     submenu: [
       {
         id: 11,
         title: "Deal Discovery",
-        path: "/#features",
+        path: "/product#deal-discovery",
         newTab: false,
       },
       {
         id: 12,
         title: "Underwriting",
-        path: "/#how-it-works",
+        path: "/product#underwriting",
         newTab: false,
       },
       {
         id: 13,
         title: "Monitoring",
-        path: "/#benefits",
+        path: "/product#monitoring",
         newTab: false,
       },
       {
         id: 14,
         title: "Portfolio Management",
-        path: "/#benefits",
+        path: "/product#portfolio-management",
         newTab: false,
       },
     ],

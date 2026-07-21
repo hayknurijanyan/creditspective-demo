@@ -46,6 +46,7 @@ const Testimonials = () => {
     <section className="dark:bg-bg-color-dark bg-gray-light relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
+          eyebrow="Our Team"
           title="Designed by Industry Veterans"
           paragraph="CREDITspective is built by professionals who understand private credit intimately, combining deep domain expertise with cutting-edge AI technology."
           center
@@ -57,7 +58,7 @@ const Testimonials = () => {
           ))}
         </div>
       </div>
-      <div className="absolute right-0 top-5 z-[-1]">
+      <div className="absolute top-5 right-0 z-[-1]">
         <svg
           width="238"
           height="531"

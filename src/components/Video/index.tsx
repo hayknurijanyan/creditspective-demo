@@ -3,18 +3,18 @@
 export default function Video() {
   return (
     <>
-      <section className="relative z-10 py-16 md:py-20 lg:py-28">
+      <section className="relative z-10 py-14 lg:py-18">
         <div className="container">
           <div className="mx-auto mb-8 max-w-[720px] text-center">
             <p className="text-primary mb-3 text-sm font-semibold tracking-wider uppercase">
               Platform Walkthrough
             </p>
-            <h2 className="mb-4 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
+            <h2 className="mb-4 text-3xl leading-tight font-bold text-black sm:text-4xl md:text-[45px] dark:text-white">
               Experience the Platform
             </h2>
-            <p className="text-base leading-relaxed text-body-color md:text-lg">
-              See how CREDITspective transforms leveraged credit operations
-              with AI-powered intelligence.
+            <p className="text-body-color text-base leading-relaxed md:text-lg">
+              See how CREDITspective transforms leveraged credit operations with
+              AI-powered intelligence.
             </p>
           </div>
         </div>
@@ -43,7 +43,7 @@ export default function Video() {
         </div>
         <div className="container mt-12">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-            <div className="rounded-xs bg-white p-6 shadow-three dark:bg-gray-dark dark:shadow-two">
+            <div className="shadow-three dark:bg-gray-dark dark:shadow-two rounded-xs bg-white p-6">
               <h3 className="mb-3 text-xl font-bold text-black dark:text-white">
                 Process
               </h3>
@@ -52,7 +52,7 @@ export default function Video() {
                 stages.
               </p>
             </div>
-            <div className="rounded-xs bg-white p-6 shadow-three dark:bg-gray-dark dark:shadow-two">
+            <div className="shadow-three dark:bg-gray-dark dark:shadow-two rounded-xs bg-white p-6">
               <h3 className="mb-3 text-xl font-bold text-black dark:text-white">
                 Analysis
               </h3>
@@ -61,7 +61,7 @@ export default function Video() {
                 real time.
               </p>
             </div>
-            <div className="rounded-xs bg-white p-6 shadow-three dark:bg-gray-dark dark:shadow-two">
+            <div className="shadow-three dark:bg-gray-dark dark:shadow-two rounded-xs bg-white p-6">
               <h3 className="mb-3 text-xl font-bold text-black dark:text-white">
                 Insights
               </h3>
@@ -75,4 +75,4 @@ export default function Video() {
       </section>
     </>
   );
-};
+}
