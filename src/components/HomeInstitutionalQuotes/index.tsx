@@ -28,7 +28,7 @@ const HomeInstitutionalQuotes = () => {
   };
 
   return (
-    <section className="relative z-20 -mt-18 pb-5 md:-mt-22 md:pb-7 lg:-mt-28 lg:pb-9">
+    <section className="relative z-20 -mt-16 pb-5 md:-mt-20 md:pb-7 lg:-mt-24 lg:pb-9">
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-6 sm:px-10 lg:px-14">
