@@ -28,11 +28,11 @@ const HomeInstitutionalQuotes = () => {
   };
 
   return (
-    <section className="pt-14">
+    <section className="relative z-20 -mt-18 pb-5 md:-mt-22 md:pb-7 lg:-mt-28 lg:pb-9">
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
-          <div className="w-full px-24">
-            <div className="shadow-three dark:bg-gray-dark dark:shadow-two bg-gray-light relative overflow-hidden rounded-xs px-5 py-5 sm:px-6 sm:py-6 md:px-8 md:py-7 xl:px-10 xl:py-8 2xl:px-12 2xl:py-10">
+          <div className="w-full px-6 sm:px-10 lg:px-14">
+            <div className="shadow-three dark:bg-gray-dark dark:shadow-two bg-gray-light relative mx-auto max-w-[940px] overflow-hidden rounded-md border border-black/6 px-5 py-3 shadow-[0_-8px_16px_rgba(6,8,15,0.05),0_10px_24px_rgba(6,8,15,0.06)] sm:px-6 sm:py-4 md:px-7 md:py-5 xl:px-8 xl:py-5 2xl:px-10 2xl:py-6 dark:border-white/8 dark:shadow-[0_-8px_16px_rgba(0,0,0,0.14),0_10px_24px_rgba(0,0,0,0.18)]">
               <div className="absolute inset-0 z-0 opacity-60 dark:opacity-40">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(74,108,247,0.18),_transparent_35%),radial-gradient(circle_at_bottom_right,_rgba(74,108,247,0.14),_transparent_30%)]" />
                 <svg
@@ -100,11 +100,11 @@ const HomeInstitutionalQuotes = () => {
 
               <div className="relative z-10">
                 <div
-                  className="bg-primary mb-6 h-[3px] w-14"
+                  className="bg-primary mb-4 h-[3px] w-14"
                   aria-hidden="true"
                 />
 
-                <div className="relative min-h-[128px]">
+                <div className="relative min-h-[108px] sm:min-h-[116px]">
                   {quotes.map((quote, index) => (
                     <figure
                       key={quote.id}
@@ -117,10 +117,10 @@ const HomeInstitutionalQuotes = () => {
                       }`}
                       aria-hidden={index !== activeIndex}
                     >
-                      <blockquote className="text-body-color dark:text-body-color-dark text-base leading-relaxed sm:text-lg lg:text-xl">
+                      <blockquote className="text-body-color dark:text-body-color-dark text-sm leading-relaxed sm:text-base lg:text-lg">
                         {quote.text}
                       </blockquote>
-                      <figcaption className="mt-auto pt-6 pb-1 text-sm font-semibold tracking-wider text-black uppercase dark:text-white">
+                      <figcaption className="mt-auto pt-4 pb-1 text-xs font-semibold tracking-wider text-black uppercase sm:text-sm dark:text-white">
                         {quote.author}
                       </figcaption>
                     </figure>
@@ -129,7 +129,7 @@ const HomeInstitutionalQuotes = () => {
               </div>
             </div>
 
-            <div className="relative z-10 mt-5 flex items-center justify-between px-1 sm:px-2">
+            <div className="relative z-10 mx-auto mt-3 flex max-w-[940px] items-center justify-between px-1 sm:px-2">
               <div className="flex items-center gap-2">
                 {quotes.map((quote, index) => (
                   <button
@@ -139,19 +139,19 @@ const HomeInstitutionalQuotes = () => {
                     aria-label={`Show quote ${index + 1}`}
                     className={`h-2.5 rounded-full transition-all duration-300 ${
                       index === activeIndex
-                        ? "bg-primary w-8"
-                        : "bg-primary/30 w-2.5"
+                        ? "bg-primary w-6"
+                        : "bg-primary/30 w-2"
                     }`}
                   />
                 ))}
               </div>
 
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-1.5">
                 <button
                   type="button"
                   onClick={goPrev}
                   aria-label="Previous quote"
-                  className="border-stroke text-body-color hover:text-primary inline-flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border transition-colors duration-300 dark:border-white/10 dark:text-white"
+                  className="border-stroke text-body-color hover:text-primary inline-flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border transition-colors duration-300 dark:border-white/10 dark:text-white"
                 >
                   <PrevChevronIcon />
                 </button>
@@ -159,7 +159,7 @@ const HomeInstitutionalQuotes = () => {
                   type="button"
                   onClick={goNext}
                   aria-label="Next quote"
-                  className="border-stroke text-body-color hover:text-primary inline-flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border transition-colors duration-300 dark:border-white/10 dark:text-white"
+                  className="border-stroke text-body-color hover:text-primary inline-flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border transition-colors duration-300 dark:border-white/10 dark:text-white"
                 >
                   <NextChevronIcon />
                 </button>

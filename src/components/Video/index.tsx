@@ -3,7 +3,7 @@
 export default function Video() {
   return (
     <>
-      <section className="relative z-10 py-14 lg:py-18">
+      <section className="relative z-10 py-10 lg:py-14">
         <div className="container">
           <div className="mx-auto mb-8 max-w-[720px] text-center">
             <p className="text-primary mb-3 text-sm font-semibold tracking-wider uppercase">
@@ -41,7 +41,7 @@ export default function Video() {
             {/* <img src="/images/video/shape.svg" alt="shape" className="w-full" /> */}
           </div>
         </div>
-        <div className="container mt-12">
+        <div className="container mt-8 lg:mt-10">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
             <div className="shadow-three dark:bg-gray-dark dark:shadow-two rounded-xs bg-white p-6">
               <h3 className="mb-3 text-xl font-bold text-black dark:text-white">

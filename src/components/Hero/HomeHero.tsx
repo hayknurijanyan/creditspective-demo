@@ -4,7 +4,7 @@ const HomeHero = () => {
   return (
     <section
       id="home"
-      className="dark:bg-gray-dark relative z-10 overflow-hidden bg-white pt-[120px] pb-16 md:pt-[150px] md:pb-[120px] xl:pt-[180px] xl:pb-[160px] 2xl:pt-[210px] 2xl:pb-[200px]"
+      className="dark:bg-gray-dark relative z-10 overflow-hidden bg-white pt-[108px] pb-12 md:pt-[136px] md:pb-[88px] xl:pt-[164px] xl:pb-[124px] 2xl:pt-[192px] 2xl:pb-[156px]"
     >
       <div className="container">
         <div className="-mx-4 flex flex-wrap">

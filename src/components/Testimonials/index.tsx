@@ -24,7 +24,7 @@ const testimonialData: Testimonial[] = [
   {
     id: 3,
     name: "Anurag Jain",
-    designation: "Principal",
+    designation: "CTO",
     content:
       "Investment and strategy specialist advancing AI-powered underwriting and portfolio decision support.",
     image: "/images/testimonials/auth-003.jpg",
