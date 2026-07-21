@@ -68,7 +68,7 @@ const featuresData: WorkflowFeature[] = [
         <path d="M20 12.5C23.866 12.5 27 15.634 27 19.5C27 23.366 23.866 26.5 20 26.5C16.134 26.5 13 23.366 13 19.5C13 15.634 16.134 12.5 20 12.5ZM20 8.5C13.373 8.5 8 13.873 8 20.5C8 27.127 13.373 32.5 20 32.5C26.627 32.5 32 27.127 32 20.5C32 13.873 26.627 8.5 20 8.5Z" />
       </svg>
     ),
-    imageSrc: "/images/stages/04.png",
+    imageSrc: "/images/stages/03.png",
     imageAlt:
       "CREDITspective evidence panel view showing precedent sources and explainable analysis context.",
   },
@@ -95,7 +95,7 @@ const featuresData: WorkflowFeature[] = [
         <path d="M20 15C22.75 15 25 17.25 25 20C25 22.75 22.75 25 20 25C17.25 25 15 22.75 15 20C15 17.25 17.25 15 20 15ZM20 0C22.75 0 25 2.25 25 5C25 7.75 22.75 10 20 10C17.25 10 15 7.75 15 5C15 2.25 17.25 0 20 0ZM5 30C7.75 30 10 32.25 10 35C10 37.75 7.75 40 5 40C2.25 40 0 37.75 0 35C0 32.25 2.25 30 5 30ZM5 15C7.75 15 10 17.25 10 20C10 22.75 7.75 25 5 25C2.25 25 0 22.75 0 20C0 17.25 2.25 15 5 15ZM5 0C7.75 0 10 2.25 10 5C10 7.75 7.75 10 5 10C2.25 10 0 7.75 0 5C0 2.25 2.25 0 5 0ZM35 0C37.75 0 40 2.25 40 5C40 7.75 37.75 10 35 10C32.25 10 30 7.75 30 5C30 2.25 32.25 0 35 0Z" />
       </svg>
     ),
-    imageSrc: "/images/stages/03.png",
+    imageSrc: "/images/stages/04.png",
     imageAlt:
       "CREDITspective monitoring view showing live variance analysis across portfolio performance.",
   },
