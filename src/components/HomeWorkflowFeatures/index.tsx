@@ -262,7 +262,7 @@ const HomeWorkflowFeatures = () => {
                     aria-expanded={isActive}
                   >
                     <div className="flex items-start gap-4">
-                      <div className="bg-primary/10 text-primary flex h-[44px] w-[44px] shrink-0 items-center justify-center rounded-md transition-transform duration-300 group-hover:scale-105 [&_svg]:h-6 [&_svg]:w-6">
+                      <div className="bg-accent-green/20 text-accent-green-dark flex h-[44px] w-[44px] shrink-0 items-center justify-center rounded-md transition-transform duration-300 group-hover:scale-105 [&_svg]:h-6 [&_svg]:w-6">
                         {homeIcons[feature.id] ?? feature.icon}
                       </div>
 

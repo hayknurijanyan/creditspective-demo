@@ -32,7 +32,7 @@ export default function Home() {
       <Video />
       <Integration />
       <MemoryAsAlpha />
-      {/* <HomeWorkflowFeatures /> */}
+      <HomeWorkflowFeatures />
       <ProblemsWeSolve />
       <WhatYouGet />
       <Brands />

@@ -70,16 +70,16 @@ const Features = () => {
                       aria-expanded={isActive}
                     >
                       <div className="flex items-start gap-4">
-                        <div className="bg-primary/10 text-primary flex h-[44px] w-[44px] shrink-0 items-center justify-center rounded-md transition-transform duration-300 group-hover:scale-105 [&_svg]:h-6 [&_svg]:w-6">
+                        <div className="bg-accent-green/20 text-accent-green-dark flex h-[44px] w-[44px] shrink-0 items-center justify-center rounded-md transition-transform duration-300 group-hover:scale-105 [&_svg]:h-6 [&_svg]:w-6">
                           {feature.icon}
                         </div>
 
                         <div className="min-w-0 flex-1">
-                          <span className="text-primary/80 mb-2 block text-xs font-semibold tracking-[0.18em] uppercase">
+                          <span className="mb-2 block text-xs font-semibold tracking-[0.18em] text-[#42bb9d] uppercase">
                             {feature.eyebrow}
                           </span>
 
-                          <h3 className="group-hover:text-primary mb-2 text-base font-bold text-black transition-colors duration-300 sm:text-lg lg:text-base xl:text-lg dark:text-white">
+                          <h3 className="mb-2 text-base font-bold text-black transition-colors duration-300 group-hover:text-[#42bb9d] sm:text-lg lg:text-base xl:text-lg dark:text-white">
                             {feature.title}
                           </h3>
                           <p className="text-body-color dark:text-body-color-dark text-base leading-relaxed font-medium">
@@ -121,7 +121,7 @@ const Features = () => {
             <div className="lg:sticky lg:top-28">
               <div className="border-stroke shadow-three dark:bg-gray-dark dark:shadow-two overflow-hidden rounded-md border bg-white transition-all duration-300 dark:border-white/10">
                 <div className="border-stroke border-b px-6 py-4 sm:px-8 dark:border-white/10">
-                  <p className="text-primary/80 text-xs font-semibold tracking-[0.18em] uppercase">
+                  <p className="text-xs font-semibold tracking-[0.18em] text-[#42bb9d] uppercase">
                     {activeFeature?.eyebrow}
                   </p>
                   <h3 className="mt-2 text-2xl font-bold text-black dark:text-white">

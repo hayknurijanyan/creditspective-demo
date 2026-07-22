@@ -11,7 +11,7 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
         <p className="text-primary/80 mb-3 text-xs font-semibold tracking-[0.18em] uppercase">
           {eyebrow}
         </p>
-        <div className="bg-primary/10 text-primary mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-md">
+        <div className="bg-accent-green/20 text-accent-green-dark mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-md">
           {icon}
         </div>
         <h3 className="mb-5 text-xl font-bold text-black sm:text-2xl lg:text-xl xl:text-2xl dark:text-white">
