@@ -28,13 +28,13 @@ const HomeInstitutionalQuotes = () => {
   };
 
   return (
-    <section className="relative z-20 -mt-16 pb-5 md:-mt-20 md:pb-7 lg:-mt-24 lg:pb-9">
+    <section className="relative z-20 mt-0 pb-5 sm:-mt-4 md:mt-0 md:pb-7 lg:mt-0 lg:pb-9 xl:-mt-20 2xl:-mt-24">
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
-          <div className="w-full px-6 sm:px-10 lg:px-14">
-            <div className="shadow-three dark:bg-gray-dark dark:shadow-two bg-gray-light relative mx-auto max-w-[940px] overflow-hidden rounded-md border border-black/6 px-5 py-3 shadow-[0_-8px_16px_rgba(6,8,15,0.05),0_10px_24px_rgba(6,8,15,0.06)] sm:px-6 sm:py-4 md:px-7 md:py-5 xl:px-8 xl:py-5 2xl:px-10 2xl:py-6 dark:border-white/8 dark:shadow-[0_-8px_16px_rgba(0,0,0,0.14),0_10px_24px_rgba(0,0,0,0.18)]">
+          <div className="w-full px-4">
+            <div className="shadow-three dark:bg-gray-dark dark:shadow-two bg-gray-light relative overflow-hidden rounded-md border border-black/6 px-5 py-3 shadow-[0_-8px_16px_rgba(6,8,15,0.05),0_10px_24px_rgba(6,8,15,0.06)] sm:px-6 sm:py-4 md:px-7 md:py-5 xl:px-8 xl:py-5 2xl:px-10 2xl:py-6 dark:border-white/8 dark:shadow-[0_-8px_16px_rgba(0,0,0,0.14),0_10px_24px_rgba(0,0,0,0.18)]">
               <div className="absolute inset-0 z-0 opacity-60 dark:opacity-40">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(74,108,247,0.18),_transparent_35%),radial-gradient(circle_at_bottom_right,_rgba(74,108,247,0.14),_transparent_30%)]" />
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(0,91,142,0.18),_transparent_35%),radial-gradient(circle_at_bottom_right,_rgba(66,187,157,0.14),_transparent_30%)]" />
                 <svg
                   className="absolute top-0 left-0 h-full w-full"
                   viewBox="0 0 1200 320"
@@ -129,7 +129,7 @@ const HomeInstitutionalQuotes = () => {
               </div>
             </div>
 
-            <div className="relative z-10 mx-auto mt-3 flex max-w-[940px] items-center justify-between px-1 sm:px-2">
+            <div className="relative z-10 mt-3 flex items-center justify-between px-1 sm:px-2">
               <div className="flex items-center gap-2">
                 {quotes.map((quote, index) => (
                   <button

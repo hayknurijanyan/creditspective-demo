@@ -267,7 +267,7 @@ const HomeWorkflowFeatures = () => {
                       </div>
 
                       <div className="min-w-0 flex-1">
-                        <span className="text-primary/80 mb-2 block text-xs font-semibold tracking-[0.18em] uppercase">
+                        <span className="mb-2 block text-xs font-semibold tracking-[0.18em] text-[#42bb9d] uppercase">
                           {feature.eyebrow}
                         </span>
 
@@ -313,7 +313,7 @@ const HomeWorkflowFeatures = () => {
           <div className="lg:sticky lg:top-28">
             <div className="border-stroke shadow-three dark:bg-gray-dark dark:shadow-two overflow-hidden rounded-md border bg-white transition-all duration-300 dark:border-white/10">
               <div className="border-stroke border-b px-6 py-4 sm:px-8 dark:border-white/10">
-                <p className="text-primary/80 text-xs font-semibold tracking-[0.18em] uppercase">
+                <p className="text-xs font-semibold tracking-[0.18em] text-[#42bb9d] uppercase">
                   {activeFeature?.eyebrow}
                 </p>
                 <h3 className="mt-2 text-2xl font-bold text-black dark:text-white">

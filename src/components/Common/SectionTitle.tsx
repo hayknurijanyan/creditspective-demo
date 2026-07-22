@@ -23,7 +23,7 @@ const SectionTitle = ({
         style={{ maxWidth: width, marginBottom: mb }}
       >
         {!!eyebrow && (
-          <p className="text-primary mb-3 text-sm font-semibold tracking-wider uppercase">
+          <p className="mb-3 text-sm font-semibold tracking-wider text-[#42bb9d] uppercase">
             {eyebrow}
           </p>
         )}

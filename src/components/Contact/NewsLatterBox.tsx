@@ -17,7 +17,7 @@ const NewsLatterBox = () => {
       </p>
       <Link
         href="/#resources"
-        className="mb-5 flex w-full items-center justify-center rounded-xs bg-primary px-9 py-4 text-base font-medium text-white duration-300 hover:bg-primary/90"
+        className="bg-action hover:bg-action-hover mb-5 flex w-full items-center justify-center rounded-xs px-9 py-4 text-base font-medium text-white duration-300"
       >
         Read the Blog
       </Link>

@@ -3,10 +3,10 @@
 export default function Video() {
   return (
     <>
-      <section className="relative z-10 py-10 lg:py-14">
+      <section className="relative z-10 py-8">
         <div className="container">
           <div className="mx-auto mb-8 max-w-[720px] text-center">
-            <p className="text-primary mb-3 text-sm font-semibold tracking-wider uppercase">
+            <p className="mb-3 text-sm font-semibold tracking-wider text-[#42bb9d] uppercase">
               Platform Walkthrough
             </p>
             <h2 className="mb-4 text-3xl leading-tight font-bold text-black sm:text-4xl md:text-[45px] dark:text-white">

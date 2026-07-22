@@ -12,7 +12,7 @@ const Hero = () => {
             <div className="w-full px-4">
               <div className="mx-auto max-w-[800px] text-center">
                 <div data-reveal="zoom">
-                  <p className="text-primary mb-3 text-sm font-semibold tracking-wider uppercase">
+                  <p className="mb-3 text-sm font-semibold tracking-wider text-[#42bb9d] uppercase">
                     Institutional memory for credit teams
                   </p>
                   <h1 className="mb-5 text-3xl leading-tight font-bold text-black sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight dark:text-white">
@@ -26,13 +26,13 @@ const Hero = () => {
                   <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
                     <Link
                       href="/#features"
-                      className="bg-primary hover:bg-primary/80 rounded-xs px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out"
+                      className="bg-action hover:bg-action-hover rounded-xs px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out"
                     >
                       Explore the workflow
                     </Link>
                     <Link
                       href="/#contact"
-                      className="inline-block rounded-xs bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
+                      className="bg-action hover:bg-action-hover inline-block rounded-xs px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out"
                     >
                       Request a Demo
                     </Link>

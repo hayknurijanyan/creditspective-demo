@@ -4,16 +4,13 @@ const HomeHero = () => {
   return (
     <section
       id="home"
-      className="dark:bg-gray-dark relative z-10 overflow-hidden bg-white pt-[108px] pb-12 md:pt-[136px] md:pb-[88px] xl:pt-[164px] xl:pb-[124px] 2xl:pt-[192px] 2xl:pb-[156px]"
+      className="dark:bg-gray-dark relative z-10 overflow-hidden bg-white pt-[94px] pb-12 md:pt-[120px] md:pb-[88px] xl:pt-[146px] xl:pb-[124px] 2xl:pt-[172px] 2xl:pb-[156px]"
     >
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
-            <div
-              className="mx-auto max-w-[980px] text-center"
-              data-reveal="zoom"
-            >
-              <p className="text-primary mb-4 text-sm font-semibold tracking-[0.2em] uppercase">
+            <div className="max-w-[980px] text-left" data-reveal="zoom">
+              <p className="mb-4 text-sm font-semibold tracking-[0.2em] text-[#42bb9d] uppercase">
                 Built by credit experts, for credit experts
               </p>
 
@@ -23,22 +20,22 @@ const HomeHero = () => {
                 Your Untapped Alpha Generating Superpower.
               </h1>
 
-              <p className="text-body-color dark:text-body-color-dark mx-auto mb-12 max-w-[900px] text-base leading-relaxed sm:text-lg md:text-xl">
+              <p className="text-body-color dark:text-body-color-dark mb-12 max-w-[900px] text-base leading-relaxed sm:text-lg md:text-xl">
                 The only AI application built for the full credit lifecycle,
                 grounded in institutional memory - from a team whose founders
                 have managed more than $15 billion in credit exposure.
               </p>
 
-              <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
+              <div className="flex flex-col items-start justify-start space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
                 <Link
                   href="/product"
-                  className="bg-primary hover:bg-primary/80 rounded-xs px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out"
+                  className="bg-action hover:bg-action-hover rounded-xs px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out"
                 >
                   Explore Product
                 </Link>
                 <Link
                   href="/#contact"
-                  className="inline-block rounded-xs bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
+                  className="bg-action hover:bg-action-hover inline-block rounded-xs px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out"
                 >
                   Request a Demo
                 </Link>
@@ -68,8 +65,8 @@ const HomeHero = () => {
               y2="288"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#4A6CF7" />
-              <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
+              <stop stopColor="#005b8e" />
+              <stop offset="1" stopColor="#005b8e" stopOpacity="0" />
             </linearGradient>
             <radialGradient
               id="homeHeroPaint1"
@@ -79,8 +76,8 @@ const HomeHero = () => {
               gradientUnits="userSpaceOnUse"
               gradientTransform="translate(17.9997 182) rotate(90) scale(18)"
             >
-              <stop offset="0.145833" stopColor="#4A6CF7" stopOpacity="0" />
-              <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.08" />
+              <stop offset="0.145833" stopColor="#005b8e" stopOpacity="0" />
+              <stop offset="1" stopColor="#005b8e" stopOpacity="0.08" />
             </radialGradient>
             <radialGradient
               id="homeHeroPaint2"
@@ -90,8 +87,8 @@ const HomeHero = () => {
               gradientUnits="userSpaceOnUse"
               gradientTransform="translate(76.9997 288) rotate(90) scale(34)"
             >
-              <stop offset="0.145833" stopColor="#4A6CF7" stopOpacity="0" />
-              <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.08" />
+              <stop offset="0.145833" stopColor="#005b8e" stopOpacity="0" />
+              <stop offset="1" stopColor="#005b8e" stopOpacity="0.08" />
             </radialGradient>
           </defs>
         </svg>

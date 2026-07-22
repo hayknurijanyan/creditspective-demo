@@ -54,7 +54,7 @@ const problems = [
 
 const ProblemsWeSolve = () => {
   return (
-    <section className="bg-gray-light dark:bg-gray-dark py-16 md:py-20 lg:py-28">
+    <section className="bg-gray-light dark:bg-gray-dark py-8 md:py-10 lg:pb-20">
       <div className="container">
         <SectionTitle
           eyebrow="Problems we solve"
@@ -82,7 +82,7 @@ const ProblemsWeSolve = () => {
               </div>
 
               <div className="p-6">
-                <p className="text-primary mb-3 text-sm font-semibold tracking-[0.2em] uppercase">
+                <p className="mb-3 text-sm font-semibold tracking-[0.2em] text-[#42bb9d] uppercase">
                   {problem.id}
                 </p>
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white">

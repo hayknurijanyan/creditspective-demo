@@ -34,7 +34,7 @@ const outcomes = [
 
 const WhatYouGet = () => {
   return (
-    <section className="py-16 md:py-20 lg:py-28">
+    <section className="py-16">
       <div className="container">
         <SectionTitle
           eyebrow="What you get"

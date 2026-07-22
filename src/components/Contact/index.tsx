@@ -68,7 +68,7 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="w-full px-4">
-                    <button className="bg-primary shadow-submit hover:bg-primary/90 dark:shadow-submit-dark rounded-xs px-9 py-4 text-base font-medium text-white duration-300">
+                    <button className="shadow-submit dark:shadow-submit-dark bg-action hover:bg-action-hover rounded-xs px-9 py-4 text-base font-medium text-white duration-300">
                       Request a Demo
                     </button>
                   </div>

@@ -10,7 +10,7 @@ const checkIcon = (
 const Integration = () => {
   const List = ({ text }: { text: string }) => (
     <p className="text-body-color mb-4 flex items-center text-base font-medium sm:text-lg">
-      <span className="bg-primary/10 text-primary mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md">
+      <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-[#007c7e]/15 text-[#42bb9d]">
         {checkIcon}
       </span>
       {text}

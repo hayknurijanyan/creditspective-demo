@@ -100,7 +100,7 @@ const Pricing = () => {
             </p>
             <Link
               href="/#contact"
-              className="bg-primary hover:bg-primary/90 inline-block rounded-xs px-8 py-4 text-base font-semibold text-white duration-300"
+              className="bg-action hover:bg-action-hover inline-block rounded-xs px-8 py-4 text-base font-semibold text-white duration-300"
             >
               Request a Demo
             </Link>
