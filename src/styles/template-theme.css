@@ -465,6 +465,12 @@ details,
   width: fit-content;
 }
 
+.brand-logo {
+  display: block;
+  width: auto;
+  height: 38px;
+}
+
 .brand-word {
   font-size: 20px;
   letter-spacing: -0.04em;
@@ -1854,8 +1860,8 @@ blockquote cite {
 .blog-body p {
   margin: 0;
   color: var(--ink-soft);
-  font-size: 13px;
-  line-height: 1.45;
+  font-size: 12px;
+  line-height: 1.4;
 }
 
 .team {
@@ -2056,6 +2062,10 @@ blockquote cite {
 
 .footer-brand {
   color: var(--white);
+}
+
+.footer-brand .brand-logo {
+  height: 34px;
 }
 
 .footer-grid p {

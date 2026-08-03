@@ -43,14 +43,11 @@ export default function Home() {
       <header className="site-header">
         <div className="header-inner container">
           <a className="brand" href="#top" aria-label="CREDITspective home">
-            <span className="brand-mark" aria-hidden="true">
-              <span />
-              <span />
-              <span />
-            </span>
-            <span className="brand-word">
-              CREDIT<span>spective</span>
-            </span>
+            <img
+              className="brand-logo"
+              src="/images/logo/creditspective-logo.png"
+              alt="CREDITspective"
+            />
           </a>
 
           <nav className="primary-nav" aria-label="Primary navigation">
@@ -767,14 +764,11 @@ export default function Home() {
         <div className="footer-grid container">
           <div>
             <a className="brand footer-brand" href="#top">
-              <span className="brand-mark" aria-hidden="true">
-                <span />
-                <span />
-                <span />
-              </span>
-              <span className="brand-word">
-                CREDIT<span>spective</span>
-              </span>
+              <img
+                className="brand-logo"
+                src="/images/logo/creditspective-logo.png"
+                alt="CREDITspective"
+              />
             </a>
             <p>AI-native intelligence for institutional credit markets.</p>
             <small>Built in partnership with Global Economics Group.</small>
