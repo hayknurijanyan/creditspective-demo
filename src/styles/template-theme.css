@@ -433,11 +433,11 @@ details,
 }
 
 .section-pad {
-  padding: 118px 0;
+  padding: 60px 0;
 }
 
 .section-pad-sm {
-  padding: 82px 0;
+  padding: 60px 0;
 }
 
 .site-header {
@@ -701,6 +701,10 @@ h3 {
   min-height: 760px;
   display: flex;
   align-items: center;
+}
+
+.hero.section-pad {
+  padding: 44px 0;
 }
 
 .hero::before {
@@ -1088,7 +1092,7 @@ blockquote cite {
 }
 
 .section-heading {
-  margin-bottom: 58px;
+  margin-bottom: 44px;
 }
 
 .split-heading {
@@ -1401,7 +1405,19 @@ blockquote cite {
 }
 
 .platform-heading > p {
-  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  padding: 16px 18px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: linear-gradient(
+    140deg,
+    rgba(255, 255, 255, 0.12),
+    rgba(255, 255, 255, 0.04)
+  );
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 15px;
+  line-height: 1.65;
 }
 
 .platform-radio {
@@ -1456,7 +1472,7 @@ blockquote cite {
 }
 
 .platform-panels {
-  min-height: 650px;
+  min-height: 0;
 }
 
 .platform-panel {
@@ -1687,7 +1703,64 @@ blockquote cite {
 }
 
 .blogs {
-  background: var(--white);
+  color: var(--white);
+  background:
+    radial-gradient(
+      110% 90% at 10% 10%,
+      rgba(255, 255, 255, 0.06),
+      transparent 56%
+    ),
+    radial-gradient(
+      120% 90% at 90% 100%,
+      rgba(255, 255, 255, 0.04),
+      transparent 58%
+    ),
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--navy) 90%, black),
+      color-mix(in srgb, var(--teal-dark) 64%, var(--navy))
+    );
+  border-block: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.blogs .eyebrow {
+  color: var(--accent-light);
+}
+
+.blogs h2 {
+  color: var(--white);
+}
+
+.blogs .centered-heading > p:last-child {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.blogs .blog-card {
+  border-color: rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.22);
+}
+
+.blogs .blog-card:hover {
+  border-color: color-mix(in srgb, var(--navy) 50%, var(--accent-light));
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.28);
+}
+
+.blogs .blog-media {
+  border-bottom-color: transparent;
+}
+
+.blogs .blog-body h3 a {
+  color: var(--white);
+}
+
+.blogs .blog-body h3 a:hover {
+  color: var(--accent-light);
+}
+
+.blogs .blog-meta,
+.blogs .blog-body p {
+  color: rgba(255, 255, 255, 0.76);
 }
 
 .blog-grid {
@@ -1708,7 +1781,7 @@ blockquote cite {
 }
 
 .blog-card:hover {
-  border-color: color-mix(in srgb, var(--teal) 20%, var(--line-strong));
+  border-color: color-mix(in srgb, var(--teal-dark) 34%, var(--line-strong));
   box-shadow: 0 14px 32px rgba(var(--ink-rgb), 0.08);
   transform: translateY(-2px);
 }
@@ -1718,7 +1791,7 @@ blockquote cite {
   display: block;
   aspect-ratio: 16 / 10;
   overflow: hidden;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 0;
   background: #dce9ec;
 }
 
@@ -1766,7 +1839,7 @@ blockquote cite {
 
 .blog-body h3 {
   margin-bottom: 8px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.28;
 }
 
@@ -1786,36 +1859,25 @@ blockquote cite {
 }
 
 .team {
-  color: var(--white);
-  background:
-    radial-gradient(
-      110% 90% at 10% 10%,
-      rgba(255, 255, 255, 0.06),
-      transparent 56%
-    ),
-    radial-gradient(
-      120% 90% at 90% 100%,
-      rgba(255, 255, 255, 0.04),
-      transparent 58%
-    ),
-    linear-gradient(
-      135deg,
-      color-mix(in srgb, var(--navy) 90%, black),
-      color-mix(in srgb, var(--teal-dark) 64%, var(--navy))
-    );
-  border-block: 1px solid rgba(255, 255, 255, 0.14);
+  color: var(--ink);
+  background: linear-gradient(
+    180deg,
+    var(--memory-bg-top),
+    var(--memory-bg-bottom)
+  );
+  border-block: 1px solid var(--line);
 }
 
 .team .eyebrow {
-  color: var(--accent-light);
+  color: var(--teal);
 }
 
 .team h2 {
-  color: var(--white);
+  color: var(--ink);
 }
 
 .team .centered-heading > p:last-child {
-  color: rgba(255, 255, 255, 0.72);
+  color: var(--ink-soft);
 }
 
 .team-grid {
@@ -1826,10 +1888,10 @@ blockquote cite {
 
 .team-card {
   padding: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid var(--line-strong);
   border-radius: 16px;
-  background: rgba(255, 255, 255, 0.08);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+  background: var(--white);
+  box-shadow: var(--shadow-soft);
 }
 
 .team-head {
@@ -1848,7 +1910,7 @@ blockquote cite {
   height: 62px;
   border-radius: 50%;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.24);
+  border: 1px solid var(--line-strong);
   flex: 0 0 62px;
 }
 
@@ -1861,12 +1923,12 @@ blockquote cite {
 .team-card h3 {
   margin-bottom: 2px;
   font-size: 17px;
-  color: var(--white);
+  color: var(--ink);
 }
 
 .team-role {
   margin: 0;
-  color: color-mix(in srgb, var(--accent-light) 74%, white);
+  color: var(--teal-dark);
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 0.05em;
@@ -1875,7 +1937,7 @@ blockquote cite {
 
 .team-bio {
   margin: 0;
-  color: rgba(255, 255, 255, 0.74);
+  color: var(--ink-soft);
   font-size: 13px;
   line-height: 1.42;
 }
@@ -1883,6 +1945,15 @@ blockquote cite {
 .who {
   background: var(--white);
   border-block: 1px solid var(--line);
+}
+
+.who .eyebrow {
+  color: var(--teal);
+}
+
+.who h2,
+.who-columns h3 {
+  color: var(--ink);
 }
 
 .who-grid {
@@ -1898,7 +1969,7 @@ blockquote cite {
 
 .who-columns {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.92fr 1.08fr;
   gap: 40px;
 }
 
@@ -1914,13 +1985,27 @@ blockquote cite {
 }
 
 .tag-list span {
-  padding: 11px 14px;
+  padding: 9px 12px;
   border: 1px solid var(--line-strong);
   border-radius: 999px;
   color: var(--ink-soft);
   background: var(--paper);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 650;
+}
+
+.who .tag-list span {
+  border-color: var(--line-strong);
+  color: var(--ink-soft);
+  background: var(--paper);
+}
+
+.who-columns > div:last-child .tag-list {
+  gap: 8px;
+}
+
+.who-columns > div:last-child .tag-list span {
+  padding: 8px 11px;
 }
 
 .cta {
@@ -2093,11 +2178,11 @@ blockquote cite {
   }
 
   .section-pad {
-    padding: 82px 0;
+    padding: 68px 0;
   }
 
   .section-pad-sm {
-    padding: 62px 0;
+    padding: 52px 0;
   }
 
   .site-header {
@@ -2122,6 +2207,10 @@ blockquote cite {
 
   .hero {
     min-height: auto;
+  }
+
+  .hero.section-pad {
+    padding: 52px 0 46px;
   }
 
   .hero-grid {
@@ -2235,6 +2324,12 @@ blockquote cite {
     margin-bottom: 40px;
   }
 
+  .platform-heading > p {
+    padding: 14px 16px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
   .platform-tabs {
     grid-template-columns: 1fr 1fr;
   }
@@ -2254,6 +2349,10 @@ blockquote cite {
 
   .platform-copy h3 {
     font-size: 24px;
+  }
+
+  .blog-body h3 {
+    font-size: 15px;
   }
 
   .outcome-grid article {

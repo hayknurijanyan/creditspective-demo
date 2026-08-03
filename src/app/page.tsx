@@ -637,6 +637,37 @@ export default function Home() {
           </div>
         </section>
 
+        <section id="who-we-serve" className="who section-pad-sm">
+          <div className="who-grid container">
+            <div>
+              <p className="eyebrow">Purpose-built for institutional credit</p>
+              <h2>One intelligence layer. Multiple credit operating models.</h2>
+            </div>
+            <div className="who-columns">
+              <div>
+                <h3>Industries</h3>
+                <div className="tag-list">
+                  <span>Private Credit</span>
+                  <span>BSL Investors</span>
+                  <span>Banks</span>
+                  <span>Insurance</span>
+                  <span>Private Equity Credit</span>
+                </div>
+              </div>
+              <div>
+                <h3>Users</h3>
+                <div className="tag-list">
+                  <span>Credit Analysts</span>
+                  <span>Portfolio Managers</span>
+                  <span>Investment Committee</span>
+                  <span>Chief Credit Officers</span>
+                  <span>Credit Oversight</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section id="resources" className="blogs section-pad-sm">
           <div className="container">
             <div className="section-heading centered-heading">
@@ -701,37 +732,6 @@ export default function Home() {
                   <p className="team-bio">{member.bio}</p>
                 </article>
               ))}
-            </div>
-          </div>
-        </section>
-
-        <section id="who-we-serve" className="who section-pad-sm">
-          <div className="who-grid container">
-            <div>
-              <p className="eyebrow">Purpose-built for institutional credit</p>
-              <h2>One intelligence layer. Multiple credit operating models.</h2>
-            </div>
-            <div className="who-columns">
-              <div>
-                <h3>Industries</h3>
-                <div className="tag-list">
-                  <span>Private Credit</span>
-                  <span>BSL Investors</span>
-                  <span>Banks</span>
-                  <span>Insurance</span>
-                  <span>Private Equity Credit</span>
-                </div>
-              </div>
-              <div>
-                <h3>Users</h3>
-                <div className="tag-list">
-                  <span>Credit Analysts</span>
-                  <span>Portfolio Managers</span>
-                  <span>Investment Committee</span>
-                  <span>Chief Credit Officers</span>
-                  <span>Credit Oversight</span>
-                </div>
-              </div>
             </div>
           </div>
         </section>
