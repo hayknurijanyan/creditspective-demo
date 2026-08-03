@@ -2,12 +2,14 @@
 
 import { useEffect, useState } from "react";
 
-type ThemeKey = "cobalt" | "teal" | "copper";
+type ThemeKey = "cobalt" | "teal" | "copper" | "forest" | "graphite";
 
 const THEME_LABELS: Record<ThemeKey, string> = {
   cobalt: "Navy Blue",
   teal: "Institutional Teal",
   copper: "Slate Rose",
+  forest: "Forest & Gold",
+  graphite: "Graphite & Copper",
 };
 
 const THEME_OPTIONS: Array<{
@@ -26,10 +28,24 @@ const THEME_OPTIONS: Array<{
     key: "copper",
     subtitle: "Custom design - slate base with rose accents",
   },
+  {
+    key: "forest",
+    subtitle: "Established, patient-capital, premium",
+  },
+  {
+    key: "graphite",
+    subtitle: "Differentiated, editorial, private-markets",
+  },
 ];
 
 const isThemeKey = (value: string): value is ThemeKey => {
-  return value === "cobalt" || value === "teal" || value === "copper";
+  return (
+    value === "cobalt" ||
+    value === "teal" ||
+    value === "copper" ||
+    value === "forest" ||
+    value === "graphite"
+  );
 };
 
 const ThemeLab = () => {

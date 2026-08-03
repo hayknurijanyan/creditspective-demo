@@ -574,13 +574,16 @@ export default function Home() {
           <div className="container">
             <div className="section-heading centered-heading">
               <p className="eyebrow">What CREDITspective enables</p>
-              <h2>More judgment. More capacity. Better credit decisions.</h2>
+              <h2>
+                More judgment. More capacity.
+                <br /> Better credit decisions.
+              </h2>
             </div>
 
             <div className="outcome-grid">
               <article>
                 <span className="outcome-icon" aria-hidden="true">
-                  ↗
+                  <span>↗</span>
                 </span>
                 <h3>Discover better-fit deals</h3>
                 <p>
@@ -590,7 +593,7 @@ export default function Home() {
               </article>
               <article>
                 <span className="outcome-icon" aria-hidden="true">
-                  ◎
+                  <span>◎</span>
                 </span>
                 <h3>Turn hindsight into insight</h3>
                 <p>
@@ -600,7 +603,19 @@ export default function Home() {
               </article>
               <article>
                 <span className="outcome-icon" aria-hidden="true">
-                  ≋
+                  <svg
+                    className="outcome-icon-svg"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4 6H16M4 10H14M4 14H12"
+                      stroke="currentColor"
+                      strokeWidth="1.8"
+                      strokeLinecap="round"
+                    />
+                  </svg>
                 </span>
                 <h3>Underwrite smarter and faster</h3>
                 <p>
@@ -610,7 +625,7 @@ export default function Home() {
               </article>
               <article>
                 <span className="outcome-icon" aria-hidden="true">
-                  △
+                  <span>△</span>
                 </span>
                 <h3>Identify risk earlier</h3>
                 <p>
