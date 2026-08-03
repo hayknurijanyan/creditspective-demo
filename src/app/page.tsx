@@ -766,7 +766,7 @@ export default function Home() {
             <a className="brand footer-brand" href="#top">
               <img
                 className="brand-logo"
-                src="/images/logo/creditspective-logo.png"
+                src="/images/logo/creditspective-logo-white.png"
                 alt="CREDITspective"
               />
             </a>
